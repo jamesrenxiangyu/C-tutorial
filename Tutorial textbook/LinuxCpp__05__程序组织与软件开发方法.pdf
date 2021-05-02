@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title></title><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<script type="text/javascript">
+
+if (window.parent && parent.rcmail) {
+	parent.rcmail.add_label({"loading":"Loading...","servererror":"Server Error!","connerror":"Connection Error (Failed to reach the server)!","requesttimedout":"Request timed out","refreshing":"Refreshing...","windowopenerror":"The popup window was blocked!","uploadingmany":"Uploading files...","close":"Close","login":"Login","folders":"Folders","search":"Search","attachment":"Attachment","section":"Section","options":"Options"});
+	parent.rcmail.iframe_loaded("");
+	parent.rcmail.session_error(".\/?_task=login&_err=session");
+}
+</script>
+
+</head>
+<body>
+</body>
+</html>
