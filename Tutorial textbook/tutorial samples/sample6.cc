@@ -1,21 +1,26 @@
-#include <cstdio>;
-#include <cstring>;
-#include <iostream>;
-#include "LinkList.h";
+#include <cstdio>
+#include <cstring>
+#include <iostream>
+#include "Point.h"
 
 using namespace std;
 struct POINT{int x,y ;};
 static char *DupString(const char *s);
 
-// int main(){
-//     int x,y;
-//     x = 3;
-//     y = 5;
-//     PPoint A = PPOINT PtCreate(x, y);
-//     void PtGetvalue(A, *x, *y);
-
-
-// }
+int main(){
+    int x,y;
+    x = 3;
+    y = 5;
+    int x1, y1;
+    PPOINT A;
+    A = PtCreate(x, y);
+    PtGetvalue(A, &x1, &y1);
+    cout << x1 << y1 <<endl;
+    PtSetvalue(A, x+1, y+1);
+    PtGetvalue(A, &x, &y);
+    cout << x1 << y1 <<endl;
+    cout << A->x << A->y <<endl;
+}
 
 PPOINT PtCreate(int x, int y){
     PPOINT t = new POINT;
